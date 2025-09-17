@@ -13,7 +13,14 @@
   "packages": {
     ".": {
       "release-type": "terraform-module",
-      "changelog-path": "CHANGELOG.md"
+      "changelog-path": "CHANGELOG.md",
+      "exclude-paths": [
+        ".github/**",
+        ".release-please*",
+        "dependabot.yml",
+        "**/*.md"
+      ],
+      "skip-labels": ["autorelease: skip", "release: ignore"]
     }
   }
 }
